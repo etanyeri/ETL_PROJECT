@@ -1,0 +1,53 @@
+cycler==0.11.0
+fonttools==4.33.3
+kiwisolver==1.4.2
+matplotlib==3.5.2
+numpy==1.22.3
+packaging==21.3
+pandas==1.4.2
+Pillow==9.1.0
+pyparsing==3.0.9
+python-dateutil==2.8.2
+pytz==2022.1
+scipy==1.8.0
+seaborn==0.11.2
+six==1.16.0
+
+
+
+  
+
+      #EXTRACT
+# 1. First create your project folder with venv on VSC.
+# 2. Go over all csv files,their columns, the number of rows,size etc.
+# 3. Copy all the necessary CSV files under your project folder.
+# 4. Import Python Pandas package to convert these csv files into Dataframe format to be able to manipulate these data sets.
+# 5. Use pandas.read_csv('filenames') function. Or any valid string path is acceptable.
+# 5. Convert each csv files into df's. And name them accordingly.
+# 6. Run df.head() to see only first 5 lines for how small sample data looks like.
+      
+      #TRANSFORM
+    #CLEAN,UNDUPLICATE,MERGE
+# 7. Use skiprows to get rid of unnecessary rows on dfs.
+# 8. NaN stands(Not A Number)is to represent the missing value in the data. df.isna() is used to detect missing values.(True,False)
+# 9. Check the dataframes' values that which columns have NaN/Null or not to get some ideas.
+# 10. Get started to merge some dfs which  will help to gather and analyze visual data way better and efficient.
+# 13. Decide to merge two df files with a common column so that these two dataframes can be joined horizontally.
+# 14. Make sure this common column has the same data values ​​in both dfs. Otherwise, the data columns will not be placed correctly.
+# 15. Remove duplicate rows of common columns and get the unique values of the common column.
+# 16. df.drop_duplicates( subset= 'column_name') or df['column_name'].unique()
+# 17. Remove also 'NaN' values on the common column not to get a messed up merged data.
+# 18. df.dropna(subset='') will help on this task of transforming.
+# 19. After cleaning, merge two files with pd.merge(left,right,,how='',on='') function on 'common column'
+         # LOAD
+
+# 20. Establish the connection to your target database which is Postgres. Do some tests for connections.
+# 21. On the Target Destination, create a new Database to receive these dataframes  accordingly.
+# 22. Start loading all transformed/merged dataframes into a Postgres Database.
+# 23. Use df.to_sql('destination_table_name',con=, ) function for this task for each df file.
+# 24. After loading,check the database,tables and data values
+
+       #VISUALIZE
+  
+  # 25. Install the package of visualization called Matplotlib
+
